@@ -27,7 +27,4 @@ variable "startup_script_url" {
   default     = "https://raw.githubusercontent.com/YavorMarkov/terraform-gcp-modules/main/scripts/setup_nginx.sh"
 }
 
-variable "my_ip" {
-  description = "Your public IP address for restricted access"
-  type        = string
-}
+
