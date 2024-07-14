@@ -7,6 +7,6 @@ resource "google_compute_firewall" "secure_http" {
     ports    = ["80", "443"]
   }
 
-  source_ranges = [format("%s/32", var.my_ip)]
+  source_ranges = [format("%s", var.my_ip)]
   target_tags   = ["web"]
 }
