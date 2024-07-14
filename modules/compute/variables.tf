@@ -14,7 +14,9 @@ variable "project_id" {
 variable "zone" {
   description = "The zone to deploy resources in"
   type        = string
+  default     = "us-central1-a"  
 }
+
 
 variable "image" {
   description = "The image to use for the boot disk"
