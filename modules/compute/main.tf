@@ -18,7 +18,7 @@ resource "google_compute_instance" "enhanced_vm" {
 
   metadata = {
     
-    startup-script = file("${path.module}/../../scripts/setup_nginx.sh")
+    startup-script = file(var.startup_script_url)
   }
 }
 

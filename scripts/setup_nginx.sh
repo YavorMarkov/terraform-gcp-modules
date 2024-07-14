@@ -1,4 +1,4 @@
-nginx #!/bin/bash
+#!/bin/bash
 
 # Update package list and upgrade all packages
 sudo apt-get update
@@ -32,3 +32,4 @@ sudo systemctl enable nginx
 
 # Print a message indicating the script has finished
 echo "Startup script has completed execution."
+

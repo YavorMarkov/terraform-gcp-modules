@@ -24,6 +24,7 @@ variable "image" {
 variable "startup_script_url" {
   description = "URL to the startup script"
   type        = string
+  default     = "https://raw.githubusercontent.com/YavorMarkov/terraform-gcp-modules/main/scripts/setup_nginx.sh"
 }
 
 variable "my_ip" {
