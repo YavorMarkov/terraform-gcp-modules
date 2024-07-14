@@ -1,20 +1,16 @@
-
-variable "region" {
-  description = "The region where the resources will be created"
-  type        = string
-}
-
 variable "project_id" {
   description = "The Google Cloud project ID"
   type        = string
 }
 
-
+variable "region" {
+  description = "The region to deploy resources in"
+  type        = string
+}
 
 variable "zone" {
   description = "The zone to deploy resources in"
   type        = string
-  default     = "us-central1-a"  // Example default value
 }
 
 variable "image" {
@@ -32,4 +28,10 @@ variable "startup_script_url" {
 variable "my_ip" {
   description = "Your public IP address for restricted access"
   type        = string
+}
+
+variable "GOOGLE_CREDENTIALS" {
+  description = "The JSON credentials file for Google Cloud"
+  type        = string
+  sensitive   = true
 }
