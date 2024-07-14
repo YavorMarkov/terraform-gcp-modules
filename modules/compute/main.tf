@@ -18,7 +18,7 @@ resource "google_compute_instance" "enhanced_vm" {
   }
 
   metadata = {
-    startup-script = var.startup_script_url
+    startup-script = var.startup_script
   }
 }
 
