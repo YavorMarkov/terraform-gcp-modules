@@ -30,9 +30,9 @@ This project contains Terraform configurations to deploy a Google Cloud Platform
 
 ## Requirements
 
-- [Terraform](https://www.terraform.io/downloads.html) 1.9.2 or later
+- A [Terraform Cloud](https://www.terraform.io/cloud) account
 - A GCP account with the necessary permissions to create resources
-- Google Cloud SDK installed and configured
+- Optional- Google Cloud SDK installed and configured
 
 ## Variables
 
