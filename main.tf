@@ -15,7 +15,7 @@ module "compute_instance" {
   region              = var.region
   zone                = var.zone
   image               = var.image
-  startup_script      = data.http.startup_script.body
+  startup_script      = data.http.startup_script.response_body
   my_ip               = var.my_ip
   GOOGLE_CREDENTIALS  = var.GOOGLE_CREDENTIALS
 }
