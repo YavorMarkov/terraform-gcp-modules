@@ -4,12 +4,18 @@ provider "google" {
   region      = var.region
 }
 
+data "http" "startup_script" {
+  url = var.startup_script_url
+}
+
+
 module "compute_instance" {
   source              = "./modules/compute"
   project_id          = var.project_id
   region              = var.region
   zone                = var.zone
   image               = var.image
+  startup_script      = data.http.startup_script.body
   startup_script_url  = var.startup_script_url
   my_ip               = var.my_ip
   GOOGLE_CREDENTIALS  = var.GOOGLE_CREDENTIALS

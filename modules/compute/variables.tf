@@ -35,3 +35,8 @@ variable "GOOGLE_CREDENTIALS" {
   type        = string
   sensitive   = true
 }
+
+variable "startup_script" {
+  description = "Content of the startup script"
+  type        = string
+}
